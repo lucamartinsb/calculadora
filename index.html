@@ -9,7 +9,7 @@
 <body>
     <h1>Bem vindo a Calculadora Online</h1>
     <div class="calculadora">
-        <input type="number" placeholder="O resultado aparecerá aqui..." id="resultado" disabled>
+        <input type="number" placeholder="O resultado aparecerá aqui" id="resultado" disabled onchange="mostrarNaTela()">
         <ul id="teclado">
             <li id="apagar"><button>←</button></li>
             <li class="operadores"><button>∛</button></li>
@@ -20,22 +20,23 @@
             <li class="operadores"><button>x²</button></li>
             <li class="operadores"><button>%</button></li>
             <li class="operadores"><button>/</button></li>
-            <li><button>7</button></li>
-            <li><button>8</button></li>
-            <li><button>9</button></li>
+            <li><button class="numero">7</button></li>
+            <li><button class="numero">8</button></li>
+            <li><button class="numero">9</button></li>
             <li class="operadores"><button>*</button></li>
-            <li><button>4</button></li>
-            <li><button>5</button></li>
-            <li><button>6</button></li>
+            <li><button class="numero">4</button></li>
+            <li><button class="numero">5</button></li>
+            <li><button class="numero">6</button></li>
             <li class="operadores"><button>-</button></li>
-            <li><button>1</button></li>
-            <li><button>2</button></li>
-            <li><button>3</button></li>
-            <li class="operadores"><button>+</button></li>
-            <li><button>0</button></li>
+            <li><button class="numero">1</button></li>
+            <li><button class="numero">2</button></li>
+            <li><button class="numero">3</button></li>
+            <li class="operadores" onclick="somar()"><button>+</button></li>
+            <li><button class="numero">0</button></li>
             <li><button>.</button></li>
             <li id="igual"><button>=</button></li>
         </ul>
     </div>
+
 </body>
 </html>

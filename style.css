@@ -1,85 +1,93 @@
 /* Definições globais para todo o documento */
 * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* define a família da fonte */
+    font-weight: 600;  /* define o peso da fonte */
+    text-decoration: none; /* remove text decoration */
+    padding: 0; /* remove padding */
+    margin: 0;  /* remove margin */
+    box-sizing: border-box; /* inclui padding e border na largura e altura totais dos elementos */
+}
+
+body {
+    display: flex; /* Exibe como um contêiner flexível */
+    flex-direction: column; /* Direção da coluna */
+    align-items: center; /* Alinha os itens ao centro */
+    justify-content: center; /* Justifica o conteúdo ao centro */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
 }
 
 h1 {
-    text-align: center;
-    color: #333;
-    font-family: Arial, sans-serif;
+    margin: 32px 8px; /* Espaçamento externo */
+    text-align: center; /* Alinhamento do texto ao centro */
+    color: #333; /* Cor do texto */
 }
 
-.calculadora {
-    width: 30dvw;
-    height: 70dvh;
-    margin: 50px auto;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 12px;
-    background-color: #f1ebeb;
+.calculadora { /* Estilo da calculadora */
+    padding: 32px; /* Espaçamento interno */
+    margin: 0 16px; /* Espaçamento lateral exterior */
+    border: 2px solid #ccc; /* Estilo da borda */
+    border-radius: 12px; /* Raio das bordas */
+    background-color: #f1ebeb; /* Cor de fundo */
+    display: flex; /* Exibe como um contêiner flexível */
+    flex-direction: column; /* Direção da coluna */
+    gap: 32px; /* Espaçamento entre os elementos filhos */
 }
 
-#resultado {
-    width: 90%;
-    background-color: #e0e0e0;
-    border: 1px solid #ccc;
-    border-radius: 50px;
-    padding: 10px;
-    text-align: center;
-    font-weight: 600;
-    font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#resultado { /* Estilo do campo de resultado */
+    background-color: #e0e0e0; /* Cor de fundo */
+    border: 1px solid #ccc; /* Estilo da borda */
+    border-radius: 50px; /* Raio das bordas */
+    text-align: center; /* Alinhamento do texto ao centro */
+    padding: 12px 0px; /* Espaçamento interno */
+    font-weight: 600; /* Peso da fonte */
+    font-style: italic; /* Estilo da fonte */;
 }
 
 #teclado {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-top: 30px;
-    justify-items: center; 
-    align-items: center;
-    padding: 0;
+    display: grid; /* Exibe como um contêiner de grade */
+    justify-content: center; /* Justifica o conteúdo ao centro */
+    align-items: center; /* Alinha os itens ao centro */
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas de largura igual */
+    gap: 12px; /* Espaçamento entre os elementos filhos */
 }
 
 .operadores button {
-    background-color: #18c7d7c7 !important;
-    color: #333 !important;
+    background-color: #18c7d7c7 !important; /* Cor de fundo (important força a aplicação do estilo) */
+    color: #333 !important; /* Cor do texto (important força a aplicação do estilo) */ 
 }
 
 #igual button{
-    background-color: #3eba09 !important;
-    color: #fff !important;
-    
+    background-color: #3eba09 !important; /* Cor de fundo (important força a aplicação do estilo) */
+    color: #fff !important; /* Cor do texto (important força a aplicação do estilo) */
+
 }
 
 #apagar button {
-    background-color: #e74c3c !important;
-    color: #fff !important;
+    background-color: #e74c3c !important; /* Cor de fundo (important força a aplicação do estilo) */
+    color: #fff !important; /* Cor do texto (important força a aplicação do estilo) */
 }
 
 #ce button {
-    background-color: #d2d817 !important;
-    color: #fff !important;
-    border: 0.5px 
+    background-color: #d2d817 !important; /* Cor de fundo (important força a aplicação do estilo) */    
+    color: #fff !important; /* Cor do texto (important força a aplicação do estilo) */
+    border: 0.5px solid #ccc; /* Borda (important força a aplicação do estilo) */
 }
 
 #teclado button {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    border-radius: 50px;
-    background-color: #333;
-    color: #ccc;
-    cursor: pointer;
+    width: 40px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove a borda */
+    border-radius: 50px; /* Raio das bordas */
+    background-color: #333; /* Cor de fundo */
+    color: #ccc; /* Cor do texto */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
 }
 
 #teclado li {
-    list-style: none;
+    list-style: none; /* Remove o estilo de lista */
 }
 
 #teclado button:hover {
-    background-color: #2ecc2e !important;
+    background-color: #2ecc2e !important; /* Cor de fundo ao passar o mouse (important força a aplicação do estilo) */
 }
