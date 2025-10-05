@@ -33,7 +33,7 @@ h1 {
     gap: 32px; /* Espaçamento entre os elementos filhos */
 }
 
-#resultado { /* Estilo do campo de resultado */
+#tela { /* Estilo do display */
     background-color: #e0e0e0; /* Cor de fundo */
     border: 1px solid #ccc; /* Estilo da borda */
     border-radius: 50px; /* Raio das bordas */
@@ -51,23 +51,33 @@ h1 {
     gap: 12px; /* Espaçamento entre os elementos filhos */
 }
 
-.operadores button {
+.numeros {
+    background-color: #333; /* Cor de fundo */
+    color: #ccc; /* Cor do texto */
+}
+
+.operadores {
     background-color: #18c7d7c7 !important; /* Cor de fundo (important força a aplicação do estilo) */
     color: #333 !important; /* Cor do texto (important força a aplicação do estilo) */ 
 }
 
-#igual button{
+#igual {
     background-color: #3eba09 !important; /* Cor de fundo (important força a aplicação do estilo) */
     color: #fff !important; /* Cor do texto (important força a aplicação do estilo) */
 
 }
 
-#apagar button {
+#ponto {
+    background-color: #321515; /* Cor de fundo */
+    color: #ccc; /* Cor do texto */
+}
+
+#apagar {
     background-color: #e74c3c !important; /* Cor de fundo (important força a aplicação do estilo) */
     color: #fff !important; /* Cor do texto (important força a aplicação do estilo) */
 }
 
-#ce button {
+#ce {
     background-color: #d2d817 !important; /* Cor de fundo (important força a aplicação do estilo) */    
     color: #fff !important; /* Cor do texto (important força a aplicação do estilo) */
     border: 0.5px solid #ccc; /* Borda (important força a aplicação do estilo) */
@@ -79,8 +89,6 @@ h1 {
     font-size: 16px; /* Tamanho da fonte */
     border: none; /* Remove a borda */
     border-radius: 50px; /* Raio das bordas */
-    background-color: #333; /* Cor de fundo */
-    color: #ccc; /* Cor do texto */
     cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
 }
 

@@ -5,36 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora online</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Bem vindo a Calculadora Online</h1>
     <div class="calculadora">
-        <input type="number" placeholder="O resultado aparecerá aqui" id="resultado" disabled onchange="mostrarNaTela()">
+        <input type="text" placeholder="O resultado aparecerá aqui" id="tela" disabled">
         <ul id="teclado">
-            <li id="apagar"><button>←</button></li>
-            <li class="operadores"><button>∛</button></li>
-            <li class="operadores"><button>√</button></li>
-            <li id="ce"><button>CE</button></li>
-            <li class="operadores"><button>!</button></li>
-            <li class="operadores"><button>x³</button></li>
-            <li class="operadores"><button>x²</button></li>
-            <li class="operadores"><button>%</button></li>
-            <li class="operadores"><button>/</button></li>
-            <li><button class="numero">7</button></li>
-            <li><button class="numero">8</button></li>
-            <li><button class="numero">9</button></li>
-            <li class="operadores"><button>*</button></li>
-            <li><button class="numero">4</button></li>
-            <li><button class="numero">5</button></li>
-            <li><button class="numero">6</button></li>
-            <li class="operadores"><button>-</button></li>
-            <li><button class="numero">1</button></li>
-            <li><button class="numero">2</button></li>
-            <li><button class="numero">3</button></li>
-            <li class="operadores" onclick="somar()"><button>+</button></li>
-            <li><button class="numero">0</button></li>
-            <li><button>.</button></li>
-            <li id="igual"><button>=</button></li>
+            <li><button id="apagar" value="apagar">←</button></li>
+            <li><button class="operadores" value="∛">∛</button></li>
+            <li><button class="operadores" value="√">√</button></li>
+            <li><button id="ce" value="ce">CE</button></li>
+            <li><button class="operadores" value="!">!</button></li>
+            <li><button class="operadores" value="x³">x³</button></li>
+            <li><button class="operadores" value="x²">x²</button></li>
+            <li><button class="operadores" value="%">%</button></li>
+            <li><button class="operadores" value="/">/</button></li>
+            <li><button class="numeros" value="7">7</button></li>
+            <li><button class="numeros" value="8">8</button></li>
+            <li><button class="numeros" value="9">9</button></li>
+            <li><button class="operadores" value="*">*</button></li>
+            <li><button class="numeros" value="4">4</button></li>
+            <li><button class="numeros" value="5">5</button></li>
+            <li><button class="numeros" value="6">6</button></li>
+            <li><button class="operadores" value="-">-</button></li>
+            <li><button class="numeros" value="1">1</button></li>
+            <li><button class="numeros" value="2">2</button></li>
+            <li><button class="numeros" value="3">3</button></li>
+            <li><button class="operadores" value="+">+</button></li>
+            <li><button class="numeros" value="0">0</button></li>
+            <li><button id="ponto" value=".">.</button></li>
+            <li><button id="igual" value="=">=</button></li>
         </ul>
     </div>
 
